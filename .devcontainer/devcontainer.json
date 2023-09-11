@@ -15,11 +15,31 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip3 install --user -r requirements.txt"
+	"postCreateCommand": "pip3 install --user -r requirements.txt",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"vscode-yaml"
+			],
+			"settings": {
+				"yaml.schemas": {
+					"https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
+				},
+				"yaml.customTags": [ 
+					"!ENV scalar",
+					"!ENV sequence",
+					"tag:yaml.org,2002:python/name:materialx.emoji.to_svg",
+					"tag:yaml.org,2002:python/name:materialx.emoji.twemoji",
+					"tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format"
+				] 
+			}
+		}
+	}
 }

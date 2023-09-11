@@ -1,6 +1,6 @@
 # Triple Hexagonal Architecture
 
-**Prerequisite:** Before reading this concept description, you should be familiar with the Hexagonal Architecture design pattern introduced by Alistair Cockburn. For a concise summary, please have a look at [here](./hexagonal.md).
+**Prerequisite:** Before reading this concept description, you should be familiar with the Hexagonal Architecture design pattern introduced by Alistair Cockburn. For a concise summary, please have a look at [here](./articles/hexagonal.md).
 
 ## The Motivation
 
@@ -132,5 +132,5 @@ Every design pattern has its use cases but also its limitations. The Triple Hexa
 Consider a port for database interactions as an example. To fully and conveniently utilize the relational nature of SQL database, ORM frameworks such as SQLalchemy are a common choice. However, designing a protocol that reflects all the required features of such an ORM framework into an abstract representation might be challenging. Thus, you might decide to fall back to the ordinary non-triple Hexagonal Architecture design in the case of this specific port. Technically, you consider ORM frameworks like SQLalchemy to be themselves already implementations of the Triple Hexagonal design. The part of the framework that handles ORM classes can be seen as the abstract translator. The SQL language can be seen as a generic protocol for addressing relational databases. The SQLalchemy plugins that support different SQL dialects can be seen as different providers for the SQL protocol. So with SQLalchemy you already get most of the benefits of Triple Hexagonal Design: you can switch between database implementations without changes to the ORM models (as long as you are committed to only using SQL-based databases and you are not using more exotic SQLalchemy features not supported by all database implementations) and you can use simple mock or in-memory providers (in-memory SQLite) for testing. 
 
 ## Additional Material
-[Hexagonal Architecture](./hexagonal.md)
+[Hexagonal Architecture](./articles/hexagonal.md)
 

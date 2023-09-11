@@ -3,7 +3,7 @@
 The "Hexagonal Architecture" design pattern (also known as the "Ports and Adapters" pattern) was originally described by Alistair Cockburn in 2005 (https://alistair.cockburn.us/hexagonal-architecture/). It aims at a clean separation between purely technical concerns such as user interaction, data access, message delivery, and related infrastructure from the core of the application that implements the logic for solving a specific domain/business problem. To circumvent that the technical concerns bleed into our domain logic, an adapter code layer is introduced (**Figure 1**).
 
 ![](./imgs/hex_arch_separate.jpg)
-**Figure 1| Separation of the application "inside" from the periphery.** (Editable version at https://miro.com/app/board/uXjVOKvjuvg=/?invite_link_id=950728645852.)
+**Figure 1| Separation of the application "inside" from the periphery.**
 
 The interaction between the outside infrastructure and the inside application is outlined in more detail in **Figure 2**. The codebase of the core application is using the vocabulary of a domain-specific model. It only has a very abstract understanding of the outside world which manifests itself in the exposed application interface. This interface consists of so-called "ports" that define the interaction point with the outside world using domain-specific language. For each port, adapters are defined (outside of the code base of the core application) that connect the application ports with outside infrastructure and translate between the two sides. Thereby, two different types of ports and adapters can be distinguished:
 
@@ -14,7 +14,7 @@ The interaction between the outside infrastructure and the inside application is
 These adapters (and corresponding ports) are called directly from within the application. They are thus said to be "driven" by the application. A common example for an outbound adapter would be a data access object (DAO) that interacts with a specific database (e.g. based on PostgreSQL). Another example would be an adapter that publishes events happening in the application to an external Apache Kafka broker.
 
 ![](./imgs/hex_arch.jpg)
-**Figure 2| Schematic representation of the Hexagonal Architecture design pattern.** (Editable version at https://miro.com/app/board/uXjVOKvjuvg=/?invite_link_id=950728645852.)
+**Figure 2| Schematic representation of the Hexagonal Architecture design pattern.**
 
 This architectural pattern comes with many benefits. First of all, the application development can primarily focus on the logic needed to solve the domain problem which is the actual motivation for the software project. This logic can be worked on in isolation from the infrastructural details. So development can even progress if not all technical concerns are addressed, yet. Moreover, the application core becomes easier to understand which simplifies maintenance and helps onboarding new developers to the codebase. The domain logic is often already complex enough, hexagonal architecture helps that this complexity is not further inflated by adding technological complexity.
 
