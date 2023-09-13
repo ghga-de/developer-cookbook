@@ -1,6 +1,6 @@
 # Triple Hexagonal Architecture
 
-**Prerequisite:** Before reading this concept description, you should be familiar with the Hexagonal Architecture design pattern introduced by Alistair Cockburn. For a concise summary, please have a look at [here](./articles/hexagonal.md).
+**Prerequisite:** Before reading this concept description, you should be familiar with the Hexagonal Architecture design pattern introduced by Alistair Cockburn. For a concise summary, please have a look at [here](./articles/1_hexagonal.md).
 
 ## The Motivation
 
@@ -12,10 +12,10 @@ In the traditional Hexagonal Architecture, an adapter mediates between the appli
 
 Since the protocol interface is depicted as a third, additional hexagon (**Figure 2**), we propose "Triple Hexagonal Architecture" as the name for this design pattern.
 
-![](./imgs/hex_arch.jpg)
+![](../imgs/hex_arch.jpg)
 **Figure 1| Schematic representation of the traditional Hexagonal Architecture design pattern.** For details and explanations please see the Hexagonal Architecture Design Pattern.
 
-![](./imgs/3hex_arch.jpg)
+![](../imgs/3hex_arch.jpg)
 **Figure 2| Schematic representation of the Triple Hexagonal Architecture design pattern.**
 
 ## The Protocol Definition Matters
@@ -43,14 +43,14 @@ A serve operation performed by one application (servant) is the inbound counterp
 
 We recommend that a port should only be classified using one of the above terms and it should not make additional assumptions about the technical nature of the interaction and specifically the data transmission mechanism. This recommendation should outline the difference in intent between protocols and ports. 
 
-![](./imgs/3hex_arch_operation_types.jpg)
+![](../imgs/3hex_arch_operation_types.jpg)
 **Figure 3| Schematic representation of operation types from the perspective of the application.** This perspective is used to define the application interface (a.k.a. "ports").
 
 ## Operation Examples
 
 To further illustrate the Triple Hexagonal Architecture concept, below, we have listed examples for inbound and outbound operations. The examples are centered around protocols that correspond to infrastructure types that are commonly used in a microservice setting. **Figure 4** provides a visual legend for the involved steps.
 
-![](./imgs/3hex_arch_lin_in_out_.jpg)
+![](../imgs/3hex_arch_lin_in_out_.jpg)
 **Figure 4| Steps in inbound and outbound operations.**
 
 ### Consuming Events from a Broker
