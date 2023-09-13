@@ -11,3 +11,6 @@ To serve the content to localhost:
 cd ./src
 mkdocs serve
 ```
+
+## Deployment
+The deployment happens automatically to GitHub pages upon commiting to the main branch.
