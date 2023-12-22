@@ -1,4 +1,8 @@
+contibuters: kerstenbreuer
+
 # Design Highlights
+
+*by {{ git_page_authors }}*
 
 The GHGA Architecture is based on modern design patterns that allow us to reliably address our major challenges in the areas of information security, scalability, and multi-organizational operation. Moreover, we have strongly invested in our ability to adapt to new and changing use cases e.g. to expand the project to new research areas and be prepared for collaborations with other community initiatives. In the following, we highlight our main enabling design patterns: 
 

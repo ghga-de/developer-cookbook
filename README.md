@@ -8,7 +8,6 @@ Open the devcontainer in vscode.
 
 To serve the content to localhost:
 ```
-cd ./src
 mkdocs serve
 ```
 

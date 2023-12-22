@@ -1,0 +1,24 @@
+site_name: GHGA Developer Cookbook
+
+theme:
+  name: material
+  favicon: ./imgs/favicon.png
+  logo: ./imgs/favicon.png
+  palette:
+    scheme: default
+    primary: blue grey
+  features:
+    - navigation.tabs
+    
+markdown_extensions: 
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - git-authors
+  - git-committers:
+      repository: ghga-de/developer-cookbook
+      branch: main
