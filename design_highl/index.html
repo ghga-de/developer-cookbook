@@ -1,0 +1,545 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../open_source/">
+      
+      
+      <link rel="icon" href="../imgs/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2">
+    
+    
+      
+        <title>Design Highlights - GHGA Developer Cookbook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#design-highlights" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="GHGA Developer Cookbook" class="md-header__button md-logo" aria-label="GHGA Developer Cookbook" data-md-component="logo">
+      
+  <img src="../imgs/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GHGA Developer Cookbook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Design Highlights
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Design Highlights
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../open_source/" class="md-tabs__link">
+        
+  
+    
+  
+  Open Source
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../articles/1_hexagonal/" class="md-tabs__link">
+          
+  
+  Articles
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="GHGA Developer Cookbook" class="md-nav__button md-logo" aria-label="GHGA Developer Cookbook" data-md-component="logo">
+      
+  <img src="../imgs/favicon.png" alt="logo">
+
+    </a>
+    GHGA Developer Cookbook
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Design Highlights
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../open_source/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Open Source
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Articles
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Articles
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../articles/1_hexagonal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hexagonal Architecture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../articles/2_triple_hexagonal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Triple Hexagonal Architecture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="design-highlights">Design Highlights</h1>
+<p><em>by <span class='git-page-authors git-authors'><a href='mailto:kersten-breuer@outlook.com'>KerstenBreuer</a></span></em></p>
+<p>The GHGA Architecture is based on modern design patterns that allow us to reliably address our major challenges in the areas of information security, scalability, and multi-organizational operation. Moreover, we have strongly invested in our ability to adapt to new and changing use cases e.g. to expand the project to new research areas and be prepared for collaborations with other community initiatives. In the following, we highlight our main enabling design patterns: </p>
+<h1 id="one-api-approach">One API Approach</h1>
+<p>All GHGA services contribute to one generic API landscape that is not bound to a specific client, use case or audience. Thus every step that can be carried out in our web application can also be performed in an automated fashion. Moreover, new clients addressing novel use cases can be developed at any point, even without the involvement of GHGA. This enables integration with other software projects and outlines GHGA's ambitions to become a key infrastructure player in the biomedical community. In doing so, no compromises are made with respect to information security since all security checks are handled at the API level making it unnecessary to place trust in the client side which we potentially do not control.</p>
+<h1 id="compliance-with-community-standards">Compliance with Community Standards</h1>
+<p>To tear down barriers for community interactions even further, we are deeply invested in the vision of the Global Alliance for Genomics &amp; Health (GA4GH) that promotes a standard-based federated cloud infrastructure for genomics research. We employ all technical standards defined by the GA4GH that are relevant to the operation of a genome archive. This includes the GA4GH Passport format for describing user identities and authorities, the GA4GH Data Repository Service (DRS) as an API for standardized retrieval of research data, and the crypt4GH standard for state-of-the-art encryption with minimal performance overhead.</p>
+<h1 id="event-driven-microservice-architecture">Event-driven Microservice Architecture</h1>
+<p>The GHGA software portfolio is realized as a choreography of independent microservices. We primarily employ an event-driven inter-service communication paradigm. Compared to alternative approaches, such as the request-response model (e.g. based on REST or gRPC), our approach reduces the degree of coupling between microservices. This simplifies the development of individual microservices and increases their reusability within and beyond GHGA. Moreover, new features or requirements can often be satisfied by simply adding another microservice and letting it subscribe to already existing event streams. </p>
+<h1 id="infrastructure-agnostic">Infrastructure Agnostic</h1>
+<p>Since GHGA is federated across many organizations, its software has to be prepared for the highly diverse infrastructure available at the different organizations and we must avoid being locked into a technological platform, framework, or cloud provider. Thus we employ the Hexagonal Architecture pattern in which the application core solely focuses on the domain logic and is connected to the surrounding infrastructure through variable adapters. Support for a new infrastructure technology, such as an alternative database technology or a different message bus, can be realized by simply implementing a new adapter while the application core stays unchanged.</p>
+<h1 id="hexagonal-microservice-chassis">Hexagonal Microservice Chassis</h1>
+<p>To standardize and streamline the development of microservices, it is a common pattern to establish a so-called Microservice Chassis that centralizes cross-cutting concerns, which are required in most or all microservices, into a single library or package. We identified a strong synergy between the Microservice Chassis pattern and the above-mentioned Hexagonal Architecture since most of the cross-cutting concerns deal with the communication between a microservice and its surrounding infrastructure. We thus proposed the Triple Hexagonal Architecture which extends the classical Hexagonal Architecture by dividing the adapters into two parts. One part is Microservice-agnostic but specific to an infrastructure technology and can thus be deposited into a Microservice Chassis. The second part contains optional microservice-specific modifications to the first part. A detailed discussion of the design pattern can be found here [...]. Based on this concept, we implemented a hexagonal Microservices Chassis with support for common technologies such as Apache Kafka, S3 Object Storages, and MongoDB. The open-source library can be found on GitHub (https://github.com/ghga-de/hexkit) and PyPI (https://pypi.org/project/hexkit/) and is a general-purpose solution for building Python-based microservices applicable well beyond the use-cases of GHGA.</p>
+<h1 id="zero-trust-and-sandboxing">Zero Trust and Sandboxing</h1>
+<p>The Zero Trust paradigm is an alternative to the classical perimeter security. Instead of relying on the safety of internal networks and their protection e.g. through firewalls, the Zero Trust paradigm assumes no safe spaces and considers every network interaction, no matter whether happens internally or via the public internet, as a vulnerability. Thus, all internal and external network traffic happens in an encrypted fashion and rules restrict which network partner can talk to a given application component. We unleash the full potential of the Zero Trust paradigm by combining it with the Microservice pattern. The fine-grained compartmentalization of the application into microservices allows to effectively isolate especially vulnerable parts of the system. As an example, we could isolate the microservice managing encrypted research data from the microservice controlling the corresponding encryption secrets. As a result, an intruder would have to compromise both services to read the sensitive research data.</p>
+<h1 id="developers-as-first-class-citizens">Developers as First-Class Citizens</h1>
+<p>We identified the shortage of skilled IT professionals in the German job market as a key risk for the GHGA initiative. However, attracting outstanding talent is critical for the realization of our ambitious and technically demanding project goals. To compensate for our recruitment disadvantages, we treat the development experience as a priority that impacts high-level design decisions. Developers at GHGA are given the opportunity to work with an uncompromisingly modern software stack and gain experiences with technologies of high demand in the job market of the future. Moreover, we let developers experience the benefits of academic freedom by leaving them room to address problems on a higher level resulting in applications and frameworks that are generically applicable well beyond the GHGA project. The aforementioned hexkit library is an example of such an open-source framework. Like that, we can create a wide spectrum of niches that allows both ambitious beginners and developer veterans to grow.  </p>
+
+
+
+
+
+
+
+  
+  
+
+
+  <aside class="md-source-file">
+    
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Contributors">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"/></svg>
+      
+    </span>
+    <nav>
+      
+        <a href="mailto:kersten-breuer@outlook.com">KerstenBreuer</a>
+    </nav>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    
+      
+  <span class="md-icon" title="Contributors">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+  </span>
+  <span>GitHub</span>
+
+    
+    <nav>
+      
+        <a href="https://github.com/KerstenBreuer" class="md-author" title="@KerstenBreuer">
+          
+          <img src="https://avatars.githubusercontent.com/u/28008309?v=4&size=72" alt="KerstenBreuer">
+        </a>
+      
+      
+      
+    </nav>
+  </span>
+
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>
