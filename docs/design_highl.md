@@ -1,3 +1,5 @@
+contibuters: kerstenbreuer
+
 # Design Highlights
 
 *by {{ git_page_authors }}*
