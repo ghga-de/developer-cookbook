@@ -1,2 +1,2 @@
 mkdocs-material
-mkdocs-git-committers-plugin
+mkdocs-git-authors-plugin
