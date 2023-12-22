@@ -19,3 +19,6 @@ markdown_extensions:
 
 plugins:
   - git-authors
+  - git-committers:
+      repository: ghga-de/developer-cookbook
+      branch: feature/add_authors

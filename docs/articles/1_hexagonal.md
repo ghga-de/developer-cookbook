@@ -1,5 +1,7 @@
 # Hexagonal Architecture
 
+*by {{ git_page_authors }}*  
+
 The "Hexagonal Architecture" design pattern (also known as the "Ports and Adapters" pattern) was originally described by Alistair Cockburn in 2005 (https://alistair.cockburn.us/hexagonal-architecture/). It aims at a clean separation between purely technical concerns such as user interaction, data access, message delivery, and related infrastructure from the core of the application that implements the logic for solving a specific domain/business problem. To circumvent that the technical concerns bleed into our domain logic, an adapter code layer is introduced (**Figure 1**).
 
 ![](../imgs/hex_arch_separate.jpg)

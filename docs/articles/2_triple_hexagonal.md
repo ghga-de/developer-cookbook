@@ -1,5 +1,7 @@
 # Triple Hexagonal Architecture
 
+*by {{ git_page_authors }}*
+
 **Prerequisite:** Before reading this concept description, you should be familiar with the Hexagonal Architecture design pattern introduced by Alistair Cockburn. For a concise summary, please have a look at [here](./1_hexagonal.md).
 
 ## The Motivation
